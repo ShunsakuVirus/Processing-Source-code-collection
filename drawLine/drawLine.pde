@@ -25,7 +25,6 @@ void lineTo(float x1,float y1,float x2,float y2) {
   float normx = diffx/size;
   float normy = diffy/size;
   for(int i=0;i<size;i++) {
-    fill(255);
     stroke(255);
     point(x1,y1);
     x1 += normx;
