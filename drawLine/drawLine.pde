@@ -1,8 +1,6 @@
-
 float start_x,start_y,end_x,end_y;
 boolean isClicked = false;
 boolean isReleased = false;
-int clickCount = 0;
 
 void setup() {
   size(500,500);
