@@ -7,14 +7,14 @@ void DispNum(int num) {
     if (num % i == 0) return;
   }
   println(num);
-  if(500*500>num) pixels[num] = color(0);
+  pixels[num] = color(0);
 }
 
 void setup() {
   size(500,500);
+  background(255);
   loadPixels();
-  for (int i = 1; i <= 250000; i++)
-  {
+  for (int i = 1; i <= 500*500; i++) {
     if (i == 1)  {
       pixels[2] = color(0);
       println("2");
@@ -23,6 +23,7 @@ void setup() {
     DispNum(num);
     num = (i << 2) + 1;
     DispNum(num);
+    if(num > 500*500) break;
   }
   updatePixels();
 }
