@@ -1,6 +1,5 @@
 float[][] stacks = new float[360][2];
 boolean[] stacked = new boolean[360];
-//float[] diameter = new float[360];
 FloatList diameter;
 int index = 1;
 int interval = 6;
@@ -70,7 +69,6 @@ void mouseReleased() {
         max = diffsq;
       }
     }
-    //diameter[i] = sqrt(max);
     diameter.append(sqrt(max));
   }
   diameter.sort();
